@@ -47,4 +47,6 @@ class UserAdmin(BaseUserAdmin):
 
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Recipe)
+admin.site.register(models.Tag) # This makes sure that the new tag model is managable
+# through the Django admin interface.
 
